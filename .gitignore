@@ -1,4 +1,13 @@
 __pycache__/
+.DS_Store
+node_modules/
+env/
+.venv/
+
+# Data folders
+data/raw/
+data/processed/
+data/output/
+
+# Generated artifacts
 sales_dashboard.png
-cleaned_data.csv
-Dataset/
