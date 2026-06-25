@@ -28,7 +28,7 @@ def main() -> None:
 
     df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
     df['TotalRevenue'] = df['Quantity'] * df['UnitPrice']
-    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'], format='%m/%d/%Y %H:%M')
+    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'], format='%Y-%m-%d %H:%M:%S')
     df['Year'] = df['InvoiceDate'].dt.year
     df['Month'] = df['InvoiceDate'].dt.month
 
